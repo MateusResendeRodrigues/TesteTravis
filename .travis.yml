@@ -33,7 +33,7 @@ script:
   - ./gradlew connectedDebugAndroidTest --info
 # install app, then assemble and install instrumented tests of app module
    - ./gradlew :installDebug
-   - ./gradlew :installDebugAndroidTest
+#   - ./gradlew :installDebugAndroidTest
 # run sample instrumented unit test
 #  - adb shell am instrument -w -e debug false -e class com.owncloud.android.datamodel.OCFileUnitTest com.owncloud.android.test/android.support.test.runner.AndroidJUnitRunner
 env:
