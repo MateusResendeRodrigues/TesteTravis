@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.findclass.ajvm.findclassapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AccountActivities.SignUpActivity" />
+        <activity android:name=".AccountActivities.SignUpStep2Activity" />
+        <activity android:name=".AccountActivities.UpdateDataActivity" />
+        <activity android:name=".AccountActivities.SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".menuActivities.MenuProfessorActivity"
+            android:label="@string/title_activity_menu_professor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".menuActivities.MenuAlunoActivity"
+            android:label="@string/title_activity_menu_aluno"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SubjectActivities.MySubjectsActivity" />
+        <activity android:name=".SubjectActivities.MySubjectInfoActivity" />
+        <activity android:name=".CalendarActivities.MyCalendarProfessorActivity" />
+        <activity android:name=".SubjectActivities.AddSubjectActivity" />
+        <activity android:name=".CalendarActivities.AddTimeActivity" />
+        <activity android:name=".CalendarActivities.MyTimesActivity" />
+        <activity
+            android:name=".menuActivities.SubjectCategoryLevelActivity"
+            android:label="@string/title_activity_subject_category_medio"
+            android:parentActivityName=".menuActivities.MenuAlunoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.findclass.ajvm.findclassapp.menuActivities.MenuAlunoActivity" />
+        </activity>
+        <activity
+            android:name=".menuActivities.AvailabilityListAlunoActivity"
+            android:label="@string/title_activity_availability_list_aluno"
+            android:parentActivityName=".menuActivities.MenuAlunoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.findclass.ajvm.findclassapp.menuActivities.MenuAlunoActivity" />
+        </activity>
+        <activity
+            android:name=".menuActivities.RatingProfessorActivity"
+            android:label="@string/title_activity_rating_professor"
+            android:parentActivityName=".menuActivities.MenuAlunoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.findclass.ajvm.findclassapp.menuActivities.MenuAlunoActivity" />
+        </activity>
+        <activity
+            android:name=".menuActivities.InfoScheduleStudentActivity"
+            android:label="@string/title_activity_info_scedule_student"
+            android:parentActivityName=".menuActivities.MenuAlunoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.findclass.ajvm.findclassapp.menuActivities.MenuAlunoActivity" />
+        </activity>
+        <activity
+            android:name=".menuActivities.InfoScheduleTeacherActivity"
+            android:label="@string/title_activity_info_scedule_teacher"
+            android:parentActivityName=".menuActivities.MenuProfessorActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.findclass.ajvm.findclassapp.menuActivities.MenuProfessorActivity" />
+        </activity>
+        <activity
+            android:name=".menuActivities.ProfessorRankingActivity"
+            android:label="@string/title_activity_professor_ranking"
+            android:parentActivityName=".menuActivities.MenuAlunoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.findclass.ajvm.findclassapp.menuActivities.MenuAlunoActivity" />
+        </activity>
+        <activity
+            android:name=".menuActivities.SubjectOfProfessorActivity"
+            android:label="@string/title_activity_subject_of_professor"
+            android:parentActivityName=".menuActivities.ProfessorRankingActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.findclass.ajvm.findclassapp.menuActivities.ProfessorRankingActivity" />
+        </activity>
+        <activity
+            android:name=".menuActivities.SubjectsOfLevelActivity"
+            android:label="@string/title_activity_subjects_of_level"
+            android:parentActivityName=".menuActivities.MenuAlunoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.findclass.ajvm.findclassapp.menuActivities.MenuAlunoActivity" />
+        </activity>
+        <activity android:name=".AccountActivities.SignUpStep3Activity"></activity>
+    </application>
+
+</manifest>
