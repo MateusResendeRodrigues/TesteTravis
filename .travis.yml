@@ -17,8 +17,7 @@ addons:
      update: true
 script:
    - ./gradlew assembleRelease
-   - ./gradlew test
-   - .gradlew androidTest
+   - TERM=dumb ./gradlew -i test check coveralls
 
 
 branch: master
