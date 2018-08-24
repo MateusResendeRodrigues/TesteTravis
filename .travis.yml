@@ -17,6 +17,7 @@ addons:
      update: true
 script:
    - ./gradlew assembleRelease
+   - ./gradlew androidTest
 
 
 jobs:
